@@ -1,0 +1,64 @@
+@import './variables';
+@import './mixins';
+
+* {
+    box-sizing: border-box;
+  }
+
+html {
+    font-size: 62.5%;
+  }
+   
+  body {    
+    .flex(center, center, column);
+    color:#000;
+    font-family: 'Didot', serif;    
+    height: 100%;
+  }
+
+  h1 {
+    font-size: 3rem;
+    font-family: 'Rochester', cursive;
+    font-weight: bold;
+    flex: 1;
+    text-align: center;
+    color: #000;
+    padding-top: 50px;
+    @media @mobile{
+      padding: 20px 0px 10px 0px;
+    }
+  }
+
+  h2 {
+    font-size: 3rem;
+    font-family: 'Rochester', cursive;
+    font-weight: bold;
+    flex: 1;
+    text-align: center;
+    color: #000;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    //text-shadow: 2px 2px 4px #0000007a;
+    @media @mobile {
+      padding: 10px 20px 0px 20px;
+    }
+  }
+
+  h3 {
+    .flex(center, center);
+    font-size: 2.6rem;
+    font-family: 'Rochester', cursive;
+    font-weight: bold;
+  }
+
+  p {
+      text-indent: 2rem;
+      font-size: 1.6rem;
+  }
+
+
+@import '../components/NavBar/NavBar.less';
+@import '../components/Header/Header.less';
+@import '../components/Body/Body.less';
+@import '../components/Tabs/Tabs.less';
+@import '../components/Cards/Cards';
