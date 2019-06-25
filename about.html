@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Disney Parent</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Rochester&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="./CSS/index.css" />  
+  <script src="./components/Tabs/Tabs.js" async></script>
+</head>
+
+<body>
+
+  <!-- NAV BAR -->
+  <div class="nav-bar">
+      <div class="container">
+        <div class="container-left">
+          <img src="./assets/disney-parent-logo.png" class=logo alt="Disney Parent Logo"/>
+        </div>
+        <div class="container-center">
+          <a href="index.html">HOME</a>
+          <a href="about.html">ABOUT US</a>
+          <button class="login-btn">LOG IN</button>
+        </div>
+        <div class="container-right">
+          <i class="glyphicon glyphicon-search"></i>
+          <input type="text" placeholder="Search..">
+        </div>
+      </div>
+    </div>
+
+  <!-- HEADER -->
+  <div class="header">
+      <h1>Meet the Disney Team</h1>
+  </div>
+
+  <!-- TABS COMPONENT -->
+  <div class="tabs">
+    <div class="members">
+        <span class="title">By Role:</span>
+        <div data-tab="all" class="tab active-tab">ALL</div>
+        <div data-tab="UI" class="tab">UI</div>
+        <div data-tab="Front-End" class="tab">FRONT-END</div>
+        <div data-tab="Back-End" class="tab">BACK-END</div>
+        <div data-tab="Team-Lead" class="tab">TEAM LEAD</div>
+        <div data-tab="Project-Manager" class="tab">PROJECT MANAGER</div>
+      </div>
+  </div>
+
+  <!-- CARDS COMPONENT -->
+  <div class="cards-container">
+
+    <!-- CARD COMPONENTS -->
+    <div class="card" data-tab="UI">
+      <div class="team-member">Jessica Morrison</div>
+      <div class="member-description">
+        <div class="img-container">
+          <img src="./assets/jessica.png" />
+        </div>
+        <span>UI Developer</span>
+      </div>
+    </div>
+
+    <div class="card" data-tab="UI">
+      <div class="team-member">Scott Beeker</div>
+      <div class="member-description">
+        <div class="img-container">
+          <img src="./assets/scott.png" />
+        </div>
+        <span>UI Developer</span>
+      </div>
+    </div>
+
+    <div class="card" data-tab="Front-End">
+      <div class="team-member">Justin Chen</div>
+      <div class="member-description">
+        <div class="img-container">
+          <img src="./assets/justin.png" />
+        </div>
+        <span>Front-End Developer</span>
+      </div>
+    </div>
+
+    <!-- <div class="card" data-tab="Back-End">
+      <div class="team-member">Roxanne Printice</div>
+      <div class="member-description">
+        <div class="img-container">
+          <img src="./assets/roxanne.png" />
+        </div>
+        <span>Back-End Developer</span>
+      </div>
+    </div> -->
+
+    <div class="card" data-tab="Team-Lead">
+      <div class="team-member">Alvin Frierson</div>
+      <div class="member-description">
+        <div class="img-container">
+          <img src="./assets/alvin.png" />
+        </div>
+        <span>Team Lead</span>
+      </div>
+    </div>
+
+    <div class="card" data-tab="Project-Manager">
+      <div class="team-member">Zach Overhulser</div>
+      <div class="member-description">
+        <div class="img-container">
+          <img src="./assets/zach.png" />
+        </div>
+        <span>Project Manager</span>
+      </div>
+    </div>
+
+    <div class="card" data-tab="Project-Manager">
+      <div class="team-member">Jamie Goodnight</div>
+      <div class="member-description">
+        <div class="img-container">
+          <img src="./assets/jamie.png" />
+        </div>
+        <span>Project Manager</span>
+      </div>
+    </div>
+
+    <div class="card" data-tab="Project-Manager">
+      <div class="team-member">Ryan McLaughlin</div>
+      <div class="member-description">
+        <div class="img-container">
+          <img src="./assets/ryan.png" />
+        </div>
+        <span>Project Manager</span>
+      </div>
+    </div>   
+
+  </div>  
+
+  <footer>
+    <span>&copy; Disney Parent 2019</span>
+  </footer>
+</body>
+
+</html>
