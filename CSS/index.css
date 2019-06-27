@@ -368,8 +368,7 @@ span {
   font-weight: bold;
 }
 footer {
-  position: absolute;
-  bottom: 0;
+  position: relative;
   width: 100%;
   text-align: center;
 }
