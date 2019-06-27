@@ -222,6 +222,11 @@ span {
   max-width: 1280px;
   padding-top: 50px;
 }
+@media (max-width: 800px) {
+  .content-section {
+    flex-wrap: wrap;
+  }
+}
 @media (max-width: 500px) {
   .content-section {
     display: flex;
@@ -323,10 +328,15 @@ span {
   align-items: center;
   flex-direction: column;
   background-color: #fff;
-  width: 25%;
+  width: 380px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin: 5px;
   padding: 24px;
+}
+@media (max-width: 800px) {
+  .cards-container .card {
+    width: 310px;
+  }
 }
 @media (max-width: 500px) {
   .cards-container .card {
@@ -334,7 +344,7 @@ span {
   }
 }
 .cards-container .card .team-member {
-  font-size: 25px;
+  font-size: 2.5rem;
   font-family: Didot, serif;
 }
 .cards-container .card .member-description {
@@ -353,7 +363,7 @@ span {
 }
 .cards-container .card .member-description span {
   padding-left: 10px;
-  font-size: 12px;
+  font-size: 1.2rem;
   letter-spacing: 1px;
   font-weight: bold;
 }
