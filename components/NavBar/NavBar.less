@@ -1,89 +1,93 @@
 .nav-bar {
-    .width-100();
-    .flex(center);
-    //position: fixed; 
-    top: 0px;
-    height: 80px;
-    background-color: #fff;
+  .width-100();
+  .flex(center);
+  //position: fixed; 
+  top: 0px;
+  height: 80px;
+  background-color: #fff;
+  @media @mobile {
+    display: block;
+    height: auto;
+  }
+  .container {
+    max-width: 1280px;
+    .width-100();      
+    .flex();
+    color: #000;
+    letter-spacing: 1px;
+    padding: 0 10px;
     @media @mobile {
+      .flex(center, center, column);
       display: block;
-      height: auto;
     }
-    .container {
-      max-width: 1280px;
-      .width-100();      
-      .flex();
-      color: #000;
-      letter-spacing: 1px;
-      padding: 0 10px;
-      @media @mobile {
-        .flex(center, center, column);
-        display: block;
-      }
-      .container-left {
-        .flex(none, center);
-        flex: 1;
-        font-size: 1.1rem;
-        .logo {
-          margin-right: 25%;
-          width: 300px;
-          height: auto;
-          padding: 10px;
-          @media @mobile {
-            width: 100%;
-            padding: 20px 60px 10px;
-          }          
-        }        
-      }
-      .container-center {
-        .flex(center, center);
-        flex: 3;
-        font-size: 1.2rem;
-        a {
-          cursor: pointer;
-          margin-right: 5%;
-          text-decoration: none;
-          &:last-child {
-            margin-right: 0;
-          }
-          &:hover {
-            text-decoration: underline;
-          }         
-        }
-        .login-btn {
-          width: 90px;
-          height: 20px;
-          padding: 3px;
-          border-radius: 8px;
-          background-color: white;
-          border: 1px solid gray;
-          font-size: 1.1rem;
-          cursor: pointer;
-        }
+    .container-left {
+      .flex(none, center);
+      flex: 1;
+      font-size: 1.1rem;
+      .logo {
+        margin-right: 25%;
+        width: 300px;
+        height: auto;
+        padding: 10px;
         @media @mobile {
-          .flex(center, center, row);    
-          padding: 14px;      
+          width: 100%;
+          padding: 20px 60px 10px;
+        }          
+      }        
+    }
+    .container-center {
+      .flex(center, center);
+      flex: 3;
+      font-size: 1.2rem;
+      a {
+        cursor: pointer;
+        margin-right: 5%;
+        color: rgb(68, 123, 179);
+        text-decoration: none;
+        &:last-child {
+          margin-right: 0;
         }
-      }
-      .container-right {
-        .flex(flex-end, center);
-        flex: 1;        
-        i {
-          margin-right: 7px;
+        &:hover {
+          color:rgb(233, 146, 146);
+          text-decoration: underline;
         } 
-         input[type=text] {
-          border: 1px solid gray;
-          border-radius: 8px;
-          font-size: 1.2rem;
-          padding-left: 10px;
-          height: 25px;
-          @media @mobile {
-            width: 100%;
-            height: 30px;
-            font-size: 1.4rem;
-            padding: 10px;
-            }
-          }       
+        @media @mobile {
+          padding-top: 10px;
+        }        
+      }        
+    }
+    .container-right {
+      .flex(flex-end, center);
+      flex: 1;         
+      .login-btn {
+        width: 90px;
+        height: 20px;
+        padding: 3px;
+        border-radius: 8px;
+        background-color: white;
+        border: 1px solid gray;
+        font-size: 1.1rem;
+        font-family: Didot, serif;
+        cursor: pointer;
+        &:hover {
+          font-weight: bold;
+          color: #fff;
+          background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+          animation:slidebg 11s linear infinite;
         }
+        @keyframes slidebg {
+          to {
+            background-position:20vw;
+          }
+        }
+      }  
+        @media @mobile {
+          .flex(center, center, row);
+          width: 100%;
+          height: 30px;
+          font-size: 1.4rem;
+          padding: 20px;
+        }                 
       }
-    }   
+    }
+  }   
